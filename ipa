@@ -1,0 +1,6 @@
+
+
+git clone -b disk-backup https://github.com/Haomeng/ironic-python-agent.git
+ 
+tox -evenv --notest
+
