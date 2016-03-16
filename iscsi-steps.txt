@@ -4,6 +4,9 @@ sudo apt-get install tgt
 # prepare iscsi disk
 sudo ./create_iscsi_disk.sh lun1 iqn-1 5000
 
+# check iscsi disk
+sudo tgtadm --lld iscsi --op show --mode target
+
 # backup
 sudo ./mount_iscsi_disk.sh 9.5.126.32 iqn-1
 sudo ./copy img.raw sda
