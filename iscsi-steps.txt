@@ -1,0 +1,8 @@
+#prepare iscsi disk
+sudo ./create_iscsi_disk.sh lun1 iqn-1 5000
+
+#backup
+sudo ./mount_iscsi_disk.sh 9.5.126.32 iqn-1
+sudo ./copy img.raw sda
+sudo ./clean.sh sda
+sudo ./save_qcow2.sh sda
