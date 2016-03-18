@@ -1,0 +1,3 @@
+ironic node-update $node  add driver_info/iscsi_ip=9.123.137.129
+ironic node-update $node  add driver_info/iqn=iqn-1
+ironic node-update $node  add driver_info/lun=lun-1
