@@ -1,0 +1,4 @@
+export node=c2fb22d4-2c02-4658-9b20-cf8a97026354
+
+curl -g -i -X PUT http://localhost:6385/v1/nodes/$node/states/clone -H "X-OpenStack-Ironic-API-Version: 1.15"  -d target=clone
+
