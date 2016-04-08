@@ -1,0 +1,6 @@
+
+
+sudo qemu-img convert  -f raw /dev/sdj -O qcow2 /dev/sdh
+
+
+
