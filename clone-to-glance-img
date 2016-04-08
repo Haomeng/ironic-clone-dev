@@ -1,6 +1,38 @@
 
 
-sudo qemu-img convert  -f raw /dev/sdj -O qcow2 /dev/sdh
+sudo qemu-img convert  -f raw /dev/sdj -c -O qcow2 /dev/sdh
+
+
+whaom@whaom-ThinkCentre-M92P:~/images$ sudo qemu-img info baremetal-img-c.qcow2
+image: baremetal-img-c.qcow2
+file format: qcow2
+virtual size: 11G (11811160064 bytes)
+disk size: 13M
+cluster_size: 65536
+Format specific information:
+    compat: 1.1
+    lazy refcounts: false
+whaom@whaom-ThinkCentre-M92P:~/images$ sudo qemu-img info baremetal-img-qcow2.qcow2
+image: baremetal-img-qcow2.qcow2
+file format: qcow2
+virtual size: 11G (11811160064 bytes)
+disk size: 21M
+cluster_size: 65536
+Format specific information:
+    compat: 1.1
+    lazy refcounts: false
+whaom@whaom-ThinkCentre-M92P:~/images$ sudo qemu-img info baremetalbrbm_1.qcow2
+image: baremetalbrbm_1.qcow2
+file format: qcow2
+virtual size: 11G (11811160064 bytes)
+disk size: 42M
+cluster_size: 65536
+Format specific information:
+    compat: 0.10
+whaom@whaom-ThinkCentre-M92P:~/images$
+
+
+
 
 
 
